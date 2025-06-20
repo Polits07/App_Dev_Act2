@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Order Status - Timpla Mo, Sumaya Ako Coffee Shop";
+}
+
+<!-- Not Realtime pa Hardcoded pa lng yung naka post na order -->
+
+<!--Heading-->
+<h1 class="display-4" style="font-weight: bold; font: 30px">Your Order</h1>
+
+<!--Buttons-->
+<div class="text-center" style="margin-top: -110px; margin-left: 600px">
+    <!--Button redirect to homepage-->
+    <a asp-controller="Home" asp-action="Index" class="btn btn-dark" style="border-radius: 10px; font-size: 17px">Back Home</a>
+
+    <!--Button redirect to order page-->
+    <a asp-controller="Home" asp-action="Product" class="btn btn-dark" style="margin:50px; border-radius: 10px; font-size: 17px">Order Now</a>
+</div>
+
+<!--Sample order product tracking-->
+<body style="background-color: #6F4E37; width: 100%"> <!--Page Background Color-->
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px">
+        <div style=" width:300px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 15px">
+            <img src='https://i.pinimg.com/736x/2a/32/e8/2a32e805c6605abae8f18a7677150201.jpg'
+                 alt="Coffe Cup"
+             style="width: 100%; border-radius: 10px; text-align:center">
+            <p style="margin-top: 10px; font-size: 20px; font-weight: bold; text-align:center"> Espresso </p>
+            <p style="font-size: 15px"> Order Number: ACT-7914-TF <br />Quantity: 3L<br />Order Status: Preparing<br />
+               Estimated Delivery Time: 1 Hour</p>
+            <p style="font-size: 12px; text-align:end">Total:  ₱300.00</p>
+        </div>
+
+        <div style=" width:300px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 15px">
+            <img src='https://assets.unileversolutions.com/v1/99096038.jpg'
+                alt="Coffe Cup"
+             style="width: 100%; border-radius: 10px; text-align:center">
+             <p style="margin-top: 10px; font-size: 20px; font-weight: bold; text-align:center"> Ham and Cheese  </p>
+            <p style="font-size: 15px"> Order Number: ACT-7914-TF <br />Quantity: 2<br />Order Status: Preparing<br />
+                Estimated Delivery Time: 1 Hour</p>
+            <p style="font-size: 12px; text-align:end">Total:  ₱160.00</p>
+        </div>
+    </div>
+
+<!--Message on bottom-->
+<h2 style="font-weight: bold; margin-top: 100px; text-align: center"> Thanks For Letting Us Add a Shot of Joy to your Day! </h2>
+</body>

@@ -1,0 +1,222 @@
+﻿@{
+    ViewData["Title"] = "Product - Timpla Mo, Sumaya Ako Coffee Shop";
+}
+
+<!--Page Background Color and Layout-->
+<body style="background-color: #6F4E37; width: 100%">
+    <div class="container">
+        <!--Heading and Message under Heading-->
+        <h1 class="display-4" style="font-size:30px; font-weight: bold; margin-left: -40px">Ang Timpla at Meryenda ng Saya!</h1>
+        <p style="margin-left: 20px; font-size: 13px">Browse our drinks and snacks made to bring joy to your day.</p>
+    </div>
+
+    <!--Buttons-->
+    <div class="text-center" style="margin-top: -110px; margin-left: 600px">
+        <!--Buttons redirect to homepage-->
+        <a asp-controller="Home" asp-action="Index" class="btn btn-dark" style="border-radius: 10px; font-size: 17px">Back Home</a>
+
+        <!--Button redirect to Order Tracking-->
+        <a asp-controller="Home" asp-action="TrackOrder" class="btn btn-dark" style="margin:50px; border-radius: 10px; font-size: 17px">View Order</a>
+    </div>
+
+    <!--Product image and card design and layout and button "order now" Redirect to track order-->
+    <div class="container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px">
+        <div style=" width:200px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align:center; padding: 15px">
+            <img src='https://www.travelforever.com.au/wp-content/uploads/2020/09/Picture1.jpg'
+                alt="Coffe Cup"
+                style="width: 100%; border-radius: 10px">
+            <p style="margin-top: 10px; font-size: 16px; font-weight: bold"> Coffee Latte </p>
+            <p style="font-size: 12px"> Medium ₱ 80.00 <br />Large ₱ 130.00 </p>
+            <a href="#" class="buy-now btn btn-dark" data-product="Coffee Latte" data-category="drink">Buy Now</a>
+        </div>
+
+        <div style=" width:200px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align:center; padding: 15px">
+            <img src='https://assets.unileversolutions.com/v1/99096038.jpg'
+                 alt="Coffe Cup"
+                 style="width: 100%; border-radius: 10px">
+            <p style="margin-top: 10px; font-size: 16px; font-weight: bold"> Ham and Cheese Panini</p>
+            <p style="font-size: 12px"> ₱ 80.00 </p>
+            <a href="#" class="buy-now btn btn-dark" data-product="Ham and Cheese Panini" data-category="snack">Buy Now</a>
+        </div>
+
+        <div style=" width:200px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align:center; padding: 15px">
+            <img src='https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2022/07/25140722/shutterstock_1262600218-2-1024x683.jpg'
+                 alt="Coffe Cup"
+                 style="width: 100%; border-radius: 10px">
+            <p style="margin-top: 10px; font-size: 16px; font-weight: bold"> Boba Coffee</p>
+            <p style="font-size: 12px"> Medium ₱ 80.00 <br />Large ₱ 100.00 </p>
+            <a href="#" class="buy-now btn btn-dark" data-product="Boba Coffee" data-category="drink">Buy Now</a>
+        </div>
+
+        <div style=" width:200px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align:center; padding: 15px">
+            <img src='https://static.wixstatic.com/media/9d1501_b45b1a7ada394578ae414f37d549f4c1~mv2.jpg/v1/fill/w_520,h_276,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/9d1501_b45b1a7ada394578ae414f37d549f4c1~mv2.jpg'
+                 alt="Coffe Cup"
+                 style="width: 100%; border-radius: 10px; height:112px">
+            <p style="margin-top: 10px; font-size: 16px; font-weight: bold"> Kapeng Barako</p>
+            <p style="font-size: 12px"> Medium ₱ 40.00 <br />Large ₱ 60.00 </p>
+            <a href="#" class="buy-now btn btn-dark" data-product="Kapeng Barako" data-category="drink">Buy Now</a>
+        </div>
+
+        <div style=" width:200px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align:center; padding: 15px">
+            <img src='https://vinbarista.com/uploads/news/cappuccino-la-gi-cach-lam-1-ly-cafe-cappuccino-chuan-vi-y-202212231043.png'
+                 alt="Coffe Cup"
+                 style="width: 100%; border-radius: 10px">
+            <p style="margin-top: 10px; font-size: 16px; font-weight: bold"> Cappuccino </p>
+            <p style="font-size: 12px"> Medium ₱ 80.00 <br />Large ₱ 100.00 </p>
+            <a href="#" class="buy-now btn btn-dark" data-product="Cappucino" data-category="drink">Buy Now</a>
+        </div>
+
+        <div style=" width:200px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align:center; padding: 15px">
+            <img src='https://assets.unileversolutions.com/v1/99096055.jpg'
+                 alt="Coffe Cup"
+                 style="width: 100%; border-radius: 10px">
+            <p style="margin-top: 10px; font-size: 16px; font-weight: bold">Roast Chicken Sandwich</p>
+            <p style="font-size: 12px"> ₱ 90.00 </p>
+            <a href="#" class="buy-now btn btn-dark" data-product="Roast Chicken Sandwich" data-category="snack">Buy Now</a>
+        </div>
+
+        <div style=" width:200px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align:center; padding: 15px">
+            <img src='https://t3.ftcdn.net/jpg/06/57/64/94/360_F_657649473_wxSfoQCNkSOn92mWlNWGs0KobqRpl8kF.jpg'
+                 alt="Coffe Cup"
+                 style="width: 100%; border-radius: 10px">
+            <p style="margin-top: 10px; font-size: 16px; font-weight: bold"> Viena Coffee </p>
+            <p style="font-size: 12px"> Medium ₱ 100.00 <br />Large ₱ 120.00 </p>
+            <a href="#" class="buy-now btn btn-dark" data-product="Viena Coffee" data-category="drink">Buy Now</a>
+        </div>
+
+        <div style=" width:200px; background: white; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align:center; padding: 15px">
+            <img src='https://i.pinimg.com/736x/2a/32/e8/2a32e805c6605abae8f18a7677150201.jpg'
+                 alt="Coffe Cup"
+                 style="width: 100%; border-radius: 10px"> 
+            <p style="margin-top: 10px; font-size: 16px; font-weight: bold"> Espresso </p>
+            <p style="font-size: 12px"> Medium ₱ 80.00 <br />Large ₱ 100.00 </p>
+            <a href="#" class="buy-now btn btn-dark" data-product="Espresso" data-category="drink">Buy Now</a>
+        </div>
+         
+        <!-- Forms that pop-up if click "Buy Now" if category drinks  -->
+
+        <!--Form design and layout-->
+        <div id="drink-popup" class="popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:9999;">
+            <div class="popup-content" style="background:white; padding:40px; height: 400px; border-radius:10px; width:600px; position:relative;">
+
+                <!--"X" button design and layout-->
+                <span class="close-popup" style="position:absolute; top:10px; right:15px; font-size:20px; cursor:pointer;">&times;</span>
+
+                <!--Product name auto indicate depends on "data-product"-->
+                <h2 id="drink-title">Drink Name</h2>
+                
+                <!--Order item details like size-->
+                <p style="font-weight: bold; font-size: 20px; color: black; text-align: center">Item Details</p>
+                <div class="input-group mb-3">
+                    <input type="number" min="1" class="form-control" placeholder="Quantity" aria-label="Quantity">
+                    <label class="input-group-text" for="inputGroupSelect01">Item Size</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">Medium</option>
+                        <option value="2">Large</option>
+                    </select>
+                </div>
+
+                <!--Customer Info-->
+                <p style="font-weight: bold; font-size: 20px; color: black; text-align: center">Customer Details</p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">Name</span>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                    <span class="input-group-text" id="basic-addon2">Contact No.</span>
+                    <input type="text" class="form-control" placeholder="+63 000 000 0000" aria-label="+63 000">
+                </div>
+                <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon2">Address</span>
+                <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+                </div>
+
+                <!--Button "Place Order" redirect to Track Order-->
+                <a asp-controller="Home" asp-action="TrackOrder" class="btm btn-dark" style="width:100%; border:none; padding:10px; 
+                border-radius:5px; text-decoration: none; text-align: end">Place Order</a>
+            </div>
+        </div>
+
+        <!-- Forms that pop-up if click "Buy Now" if category drinks  -->
+
+        <!--Form design and layout-->
+        <div id="snack-popup" class="popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:9999;">
+            <div class="popup-content" style="background:white; padding:20px; border-radius:10px; width:600px; height: 400px; position:relative;">
+
+                <!--"X" button design and layout-->
+                <span class="close-popup" style="position:absolute; top:10px; right:15px; font-size:20px; cursor:pointer;">&times;</span>
+
+                <!--Product name auto indicate depends on "data-product"-->
+                <h2 id="snack-title">Snack Name</h2>
+
+                <!--Order item details like size-->
+                <p style="font-weight: bold; font-size: 20px; color: black; text-align: center">Item Details</p>
+                <div class="input-group mb-3">
+                    <input type="number" min="1" class="form-control" placeholder="Quantity" aria-label="Quantity">
+                </div>
+
+                <!--Customer Info-->
+                <p style="font-weight: bold; font-size: 20px; color: black; text-align: center">Customer Details</p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">Name</span>
+                    <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+                    <span class="input-group-text" id="basic-addon2">Contact No.</span>
+                    <input type="text" class="form-control" placeholder="+63 000 000 0000" aria-label="+63 000">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon2">Address</span>
+                    <input type="text" class="form-control" placeholder="Address" aria-label="Address">
+                </div>
+
+                <!--Button "Place Order" redirect to Track Order-->
+                <a asp-controller="Home" asp-action="TrackOrder" class="btm btn-dark" style="width:100%; border:none; padding:10px;
+                border-radius:5px; text-decoration: none; text-align: end">Place Order</a>
+            </div>
+        </div>
+
+        <!--Fuctions to pop-up the place order form-->
+        <script>
+           //Wait for the entire page load before running the code
+            document.addEventListener("DOMContentLoaded", function () {
+
+                //Select all buttons with class "buy-now"
+                const buyNowButtons = document.querySelectorAll(".buy-now");
+
+                // Add click event for each "Buy Now" button
+                buyNowButtons.forEach(function (button) {
+                    button.addEventListener("click", function (e) {
+
+                        //Stop action like redirecting
+                        e.preventDefault();
+
+                        //Get the product name and category from button data attributes
+                        const product = this.getAttribute("data-product");
+                        const category = this.getAttribute("data-category");
+
+                        //Condition if what pop-up shows (Drink or Snack)
+                        //If the product is drink, show drink pop-up with it's drink-title which is the product name
+                        if (category === "drink") {
+                            document.getElementById("drink-title").textContent = product;
+                            document.getElementById("drink-popup").style.display = "flex";
+
+                        //Show Snack pop-up if the product is snack with it's snack-title which is the product name
+                        } else if (category === "snack") {
+                            document.getElementById("snack-title").textContent = product;
+                            document.getElementById("snack-popup").style.display = "flex";
+                        }
+                    });
+                });
+
+                // Functions to close pop-up if click "X" button
+                document.querySelectorAll(".close-popup").forEach(function (closeBtn) {
+                    closeBtn.addEventListener("click", function () {
+
+                        //Hide all elements with the class popup
+                        document.querySelectorAll(".popup").forEach(function (popup) {
+                            popup.style.display = "none";
+                        });
+                    });
+                });
+            });
+        </script>
+    </div>
+</body>

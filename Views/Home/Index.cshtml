@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page - Timpla Mo, Sumaya Ako Coffee Shop";
+}
+<!--Page Background Color and layout-->
+<body style="background-color: #6F4E37; width: 100%">
+    <div class="container">
+        <div class="text-center">
+            <!--Header-->
+            <h1 class="display-4" style="margin-top: 60px; font-weight: bold; font-size: 40px">Welcome To Timpla Mo, Sumaya Ako</h1>
+
+            <!--Message under heading-->
+            <p>At Timpla Mo, Sumaya Ako, every cup is crafted to match your mood and bring joy to your day.<br />
+            Whether you’re ordering your morning fix or an afternoon treat, we serve freshly brewed coffee and delicious <br />
+            snacks made to satisfy your taste and lift your spirits.</p>
+        </div>
+        <!--Image and it's layout-->
+        <div class="text-center">
+            <img src='https://www.breakfastwithaudrey.com.au//wp-content/myuploads//2011/11/perfect-cup-of-coffee-5.jpg'
+            alt="Coffe Cup" 
+            style="height: auto; width: 400px; margin-top: 30px; border-radius: 20px">
+        </div>
+
+        <!--Button "Order now", redirect to product ordering page-->
+        <div class="text-center">
+            <a asp-controller="Home" asp-action="Product" class="btn btn-dark" style="margin:50px; border-radius: 10px">Order Now!</a>
+        </div>
+
+        <!--Contacts-->
+        <div class="Contacts" style="font-weight: bold; font-size: 10px; margin-left: 750px; color: black">
+            <p>Contact No.: 0989-763-kaw na bahala apat :)<br />
+            Email: TimplaMoSumayaAkoCoffeeShopsheess"bawal"at""gmail.com<br />
+            Location: 143, Di ka nag-iisa, Lugar Na Payapa  </p>
+        </div>
+    </div>
+</body>
